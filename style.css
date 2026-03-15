@@ -222,45 +222,42 @@ footer {
 }
 
 /* =========================================
-   SÉLECTEUR DE LANGUE
+   SÉLECTEUR DE LANGUE (Style Balenciaga)
    ========================================= */
 .lang-switch {
-    position: absolute;
-    top: 30px;
-    right: 40px;
-    font-size: 0.8em;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    position: fixed; /* Reste collé à l'écran même au scroll */
+    top: 25px;
+    right: 25px;
+    display: flex;
+    border: 1px solid #000000; /* Contour noir strict */
+    background-color: #FFFFFF;
+    z-index: 1000; /* S'assure qu'il passe par-dessus le texte */
 }
 
 .lang-switch a {
     color: #000000;
     text-decoration: none;
-    padding: 5px 8px;
-    transition: all 0.2s ease;
+    padding: 10px 15px;
+    font-size: 0.75em;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    transition: none; /* Pas d'animation douce, changement brut */
 }
 
-/* Style pour la langue actuellement sélectionnée */
-.lang-switch a.active {
-    text-decoration: underline;
-    text-underline-offset: 4px;
+/* Ligne de séparation au milieu */
+.lang-switch a:first-child {
+    border-right: 1px solid #000000;
 }
 
-/* Effet au survol (inversion des couleurs) */
+/* Inversion totale (fond noir, texte blanc) pour la langue active ou au survol */
+.lang-switch a.active,
 .lang-switch a:hover {
     background-color: #000000;
     color: #FFFFFF;
-    text-decoration: none;
 }
 
-.lang-switch span {
-    margin: 0 5px;
-    color: #000000;
-    font-weight: 400;
-}
-
-/* Pour que ça reste beau sur téléphone */
+/* Ajustement pour les petits écrans de téléphone */
 @media (max-width: 600px) {
     .lang-switch {
         top: 15px;
