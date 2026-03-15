@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - loismartineau</title>
-    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 
@@ -36,61 +36,75 @@
 
         <section>
             <h2>Missions en Entreprise</h2>
-               <div class="card">
-                    <h3>Création d'une application web de suivi de production (CNC)</h3>
-                    <p class="subtitle">LI-SU DES TEMPS - 2026</p>
+                
+                <details class="card">
+                    <summary>
+                        <h3>Création d'une application web de suivi de production (CNC)</h3>
+                        <p class="subtitle">LI-SU DES TEMPS - 2026</p>
+                    </summary>
                     <ul>
                         <li><strong>Contexte :</strong> L'entreprise possède deux machines CNC à forte valeur ajoutée (~1,2 M€), véritables goulots d'étranglement de la production. Le suivi du TRS étant inexistant, l'extraction manuelle et chronophage des données CSV fournissait au chef d'atelier des indicateurs peu exploitables, entravant ainsi la planification optimale de la charge de travail.</li>
                         <li><strong>Mon rôle :</strong> Concevoir et développer de A à Z un outil automatisé pour l'extraction des données, la data-visualisation et le reporting.</li>
                         <li><strong>Actions :</strong> Développement d'un pipeline complet en <strong>Python</strong> : récupération des données sur machine via RPA (simulation de clics), nettoyage et structuration. Création d'une application web interactive de suivi avec <strong>Streamlit</strong>, et développement de scripts pour la génération de rapports PDF.</li>
                         <li><strong>Résultats :</strong> Visibilité totale sur le TRS et gain de temps drastique pour le chef d'atelier. Optimisation concrète de la performance avec un gain du TRS de 10% sur horaire d'ouverture et de 120% hors production. Envoi automatisé des <a href="assets\Rapport_Hebdo_Soenen_S10_2026.pdf" target="_blank">reportings</a> par e-mail et mise en place d'un modèle d'estimation des temps d'usinage futurs.</li>
                     </ul>
-                </div>
-                <div class="card">
-                    <h3>Industrialisation et standardisation d'une gamme de Brise-Soleil</h3>
-                    <p class="subtitle">LI-SU DES TEMPS - 2025</p>
+                </details>
+
+                <details class="card">
+                    <summary>
+                        <h3>Industrialisation et standardisation d'une gamme de Brise-Soleil</h3>
+                        <p class="subtitle">LI-SU DES TEMPS - 2025</p>
+                    </summary>
                     <ul>
                         <li><strong>Contexte :</strong> Le produit "Brise-Soleil" souffrait d'une conception semi-standard générant des pertes de temps (recherches fastidieuses, lames recoupées) et des risques qualité (erreurs d'usinage, reprises après peinture). Cette situation entraînait des surcoûts et un manque de fluidité entre le bureau d'études (BE) et l'atelier.</li>
                         <li><strong>Mon rôle :</strong> Intervenir en tant qu'ingénieur méthodes pour transformer cette fabrication quasi-artisanale en un processus industriel fiable, reproductible et documenté.</li>
                         <li><strong>Actions :</strong> Création d'un modèle 3D de référence et d'une base de données d'usinages illustrés (fichiers LOT/Calcmet) pour le BE. Conception et prototypage en atelier d'un gabarit d'assemblage physique permettant de positionner et bloquer les lames sans erreur, indépendamment du sens de montage. Rationalisation complète de la documentation technique (nomenclatures, notices de montage).</li>
                         <li><strong>Résultats :</strong> Suppression des erreurs d'assemblage et des reprises post-peinture validée lors des premiers montages en atelier. Accélération drastique du traitement des commandes "hors-standards" au BE grâce à la nouvelle base de données. Création d'un standard technique commun facilitant le dialogue entre les services commerciaux, techniques et de production.</li>
                     </ul>
-                </div>
-                <div class="card">
-                    <h3>Conception itérative d'un enrouleur de câble motorisé et ergonomique</h3>
-                    <p class="subtitle">MECATHERM - 2024</p>
+                </details>
+
+                <details class="card">
+                    <summary>
+                        <h3>Conception itérative d'un enrouleur de câble motorisé et ergonomique</h3>
+                        <p class="subtitle">MECATHERM - 2024</p>
+                    </summary>
                     <ul>
                         <li><strong>Contexte :</strong> Le conditionnement des câbles électriques (jusqu'à 2 300 mètres par jour) s'effectuait sur un enrouleur manuel inadapté. L'opération était physiquement épuisante pour les opérateurs (posture courbée) et chronophage lors des phases de chargement/déchargement (MIP/MAP) des tourets de plus de 100 kg.</li>
                         <li><strong>Mon rôle :</strong> Concevoir de A à Z un système motorisé ergonomique et sécurisé, avec une forte contrainte budgétaire imposant la réutilisation maximale de composants en stock ou surstock.</li>
                         <li><strong>Actions :</strong> Modélisation CAO (SolidWorks) de 3 prototypes itératifs pour résoudre les problèmes d'extraction. Conception finale intégrant un basculement par vérin pneumatique et une motorisation sécurisée (commande "homme mort"). Dimensionnement de l'arbre de transmission (Inox 304) validé par calcul de Résistance des Matériaux (RDM6) sous charge de 120 kg. Sourcing interne des composants via le PLM Audros.</li>
                         <li><strong>Résultats :</strong> Validation d'une machine spéciale fiable, peu coûteuse et supprimant totalement la pénibilité physique (hauteur de travail réhaussée à 900 mm, assistance pneumatique). L'étude RDM a confirmé la robustesse du système avec une déformation maximale quasi-nulle (0,05 mm) et un fort coefficient de sécurité.</li>
                     </ul>
-                </div>
+                </details>
         </section>
 
         <section>
             <h2>Projets Académiques</h2>
             
-            <div class="card">
-                <h3>Caractérisation non-destructive de bio-composites par ultrasons</h3>
-                <p class="subtitle">Université du Québec en Abitibi-Témiscamingue (UQAT) - 2025</p>
+            <details class="card">
+                <summary>
+                    <h3>Caractérisation non-destructive de bio-composites par ultrasons</h3>
+                    <p class="subtitle">Université du Québec en Abitibi-Témiscamingue (UQAT) - 2025</p>
+                </summary>
                 <ul>
                     <li><strong>Contexte :</strong> L'évaluation mécanique classique des nouveaux bio-composites (matrice acétate de cellulose et fibres naturelles) détruit les matériaux. L'enjeu était de valider une méthode par ultrasons (CND) pour évaluer leur comportement selon leurs axes d'anisotropie, face à divers vieillissements (UV, hygrométrie, biodégradation).</li>
                     <li><strong>Mon rôle :</strong> Élaborer le protocole expérimental complet et l'analyse de données pour corréler le module d'élasticité dynamique (mesuré par ondes) au module statique (issu d'essais destructifs).</li>
                     <li><strong>Actions :</strong> Paramétrage et calibration de l'équipement SONATEST 380MS. Modélisation mathématique du matériau (modèle orthotrope homogène). Mesure multi-points des temps de vol des ondes, application de facteurs de correction et calcul des vitesses locales de propagation pour chaque type de fibre (Kraft, MCC).</li>
                     <li><strong>Résultats :</strong> Démonstration d'une corrélation quasi-parfaite (R² > 0.9) entre les modules statiques et dynamiques. Hiérarchisation précise de l'impact des vieillissements. Ce <a href="assets\Projet_de_Stage_Loïs_MARTINEAU.pdf" target="_blank">travail</a> valide les ultrasons comme outil prédictif industriel fiable et pose les bases pour l'intégration de modèles d'Intelligence Artificielle (ANFIS) en contrôle qualité.</li>
                 </ul>
-            </div>
-            <div class="card">
-                <h3>Conception mécanique d'une Monture TVO (Déploiement de capteurs)</h3>
-                <p class="subtitle">Projet Académique (BTS CPI) / KLEY France - 2024</p>
+            </details>
+
+            <details class="card">
+                <summary>
+                    <h3>Conception mécanique d'une Monture TVO (Déploiement de capteurs)</h3>
+                    <p class="subtitle">Projet Académique (BTS CPI) / KLEY France - 2024</p>
+                </summary>
                 <ul>
                     <li><strong>Contexte :</strong> KLEY France développe des systèmes de déploiement de capteurs sous-marins (TVO) pour navires océanographiques. L'enjeu du projet était de concevoir et dimensionner la monture permettant de descendre un capteur scientifique via un puits étanche, puis de le maintenir fermement sous la coque malgré les efforts hydrodynamiques en navigation.</li>
                     <li><strong>Mon rôle :</strong> Modéliser et dimensionner la solution mécanique permettant le guidage, le verrouillage et la sécurisation du système de déploiement au sein du navire.</li>
                     <li><strong>Actions :</strong> Modélisation 3D (CAO) sur <strong>[SolidWorks / Inventor]</strong> de l'ensemble de la monture. Étude cinématique du système de descente et dimensionnement des éléments de guidage. Vérification de la résistance des matériaux (RDM) sur <strong>[la pièce critique, ex: l'arbre de maintien ou le système de verrouillage]</strong> face aux contraintes du courant marin. Choix des composants standards (roulements, visserie) adaptés.</li>
                     <li><strong>Résultats :</strong> Validation d'une maquette numérique complète répondant au cahier des charges (encombrement dans le puits, résistance aux efforts, étanchéité). Production des plans de définition et de la nomenclature pour la mise en fabrication.</li>
                 </ul>
-            </div>
+            </details>
         </section>
 
         <section>
@@ -104,7 +118,6 @@
             </div>
         </section>
         
-
         <footer>
             <p>© 2026 - LOIS MARTINEAU</p>
         </footer>
