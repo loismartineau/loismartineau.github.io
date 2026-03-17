@@ -331,6 +331,13 @@ details.card ul {
     flex-direction: column;
 }
 
+.project-gallery img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #000000; /* Contour noir strict */
+    display: block;
+    transition: transform 0.2s ease;
+}
 
 /* Léger effet de zoom brut au survol pour montrer que c'est interactif */
 .project-gallery img:hover {
