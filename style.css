@@ -357,3 +357,45 @@ details.card ul {
     padding-left: 10px;
     font-weight: 700;
 }
+
+/* =========================================
+   LIGHTBOX (Agrandissement des images)
+   ========================================= */
+.lightbox {
+    display: none; /* Caché par défaut */
+    position: fixed;
+    z-index: 9999; /* Passe par-dessus absolument tout */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.95); /* Fond blanc presque opaque */
+    justify-content: center;
+    align-items: center;
+    cursor: zoom-out; /* Pointeur en forme de loupe "-" */
+}
+
+.lightbox img {
+    max-width: 90vw;
+    max-height: 90vh;
+    border: 2px solid #000000; /* Contour noir strict */
+    box-shadow: none; /* Pas d'ombre, style brut */
+}
+
+/* Le bouton FERMER en haut à droite */
+.lightbox .close-btn {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-weight: 700;
+    font-size: 1.2em;
+    letter-spacing: 0.15em;
+    color: #000000;
+    text-transform: uppercase;
+    border-bottom: 2px solid #000000;
+}
+
+/* Changement de curseur quand on passe sur les images de la galerie */
+.project-gallery img {
+    cursor: zoom-in;
+}
