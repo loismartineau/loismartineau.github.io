@@ -319,7 +319,7 @@ details.card ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Grille automatique */
     gap: 20px;
-    margin-top: 30px;
+    margin-top: 20px;
     padding-top: 20px;
 }
 
