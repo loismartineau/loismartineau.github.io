@@ -319,6 +319,7 @@ details.card ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Grille automatique */
     margin-top: 20px;
+    gap: 20px;
 }
 
 .project-gallery figure {
@@ -348,12 +349,13 @@ details.card ul {
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-top: 10px;
+    margin-bottom: 30px;
     color: #000000;
     text-align: left;
     border-left: 2px solid #000000;
     padding-left: 10px;
     font-weight: 700;
-    margin-bottom: 20px;
+    
 }
 
 /* =========================================
