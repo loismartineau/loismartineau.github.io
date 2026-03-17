@@ -312,3 +312,48 @@ details[open].card summary::after {
 details.card ul {
     margin-top: 25px;
 }
+/* =========================================
+   GALERIE D'IMAGES (Missions)
+   ========================================= */
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Grille automatique */
+    gap: 20px;
+    margin-top: 30px;
+    border-top: 1px solid #000000; /* Ligne de séparation stricte */
+    padding-top: 20px;
+}
+
+.project-gallery figure {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-gallery img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #000000; /* Contour noir strict */
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+/* Léger effet de zoom brut au survol pour montrer que c'est interactif */
+.project-gallery img:hover {
+    transform: scale(1.02);
+    cursor: crosshair; /* Curseur de visée pour le style technique */
+}
+
+/* Légendes minimalistes */
+.project-gallery figcaption {
+    font-size: 0.70em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 10px;
+    color: #000000;
+    text-align: left;
+    border-left: 2px solid #000000;
+    padding-left: 10px;
+    font-weight: 700;
+}
